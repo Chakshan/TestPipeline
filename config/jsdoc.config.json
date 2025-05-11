@@ -1,9 +1,0 @@
-{
-  "source": {
-    "include": ["script"],
-    "exclude": ["node_modules"]
-  },
-  "opts": {
-    "destination": "./docs"
-  }
-}
