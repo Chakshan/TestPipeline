@@ -28,8 +28,9 @@ jobs:
         run: npm run format
       - name: Doc Gen
         run: npm run docs
-      - name: Upload JSDoc
-        uses: actions/upload-artifact@v4
+      - name: Build JSDoc
+        uses: andstor/jsdoc-action@v1
         with:
-          name: jsdoc
-          path: ./source/docs
+          source_dir: ./source/script
+          output_dir: ./source/docs
+          recurse: true
