@@ -37,3 +37,12 @@ function multiply(a, b) {
 function divide(a, b) {
   return a / b;
 }
+
+/** 
+ * Does nothing
+ * @param {number} a - input
+ * @returns {number} - nothing new
+*/
+function yeye (a) {
+	return a * 2 / 2 + 3 - 3;
+}
