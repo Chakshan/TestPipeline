@@ -46,3 +46,12 @@ function divide(a, b) {
 function yeye (a) {
 	return a * 2 / 2 + 3 - 3;
 }
+
+/** 
+ * Does nothing
+ * @param {number} a - input
+ * @returns {number} - nothing new
+*/
+function a (a) {
+	return a * 2 / 2 + 3 - 3;
+}
