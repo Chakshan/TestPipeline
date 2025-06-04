@@ -27,9 +27,15 @@ jobs:
       - name: Formatting
         run: npm run format
       - name: Doc Gen
-        run: npm run docs
-      - name: Deploy Docs to GitHub Pages
+        uses: andstor/jsdoc-action@v1
+        with:
+          source_dir: ./source
+          output_dir: ./docs
+          config_file: ./source/config/conf.json
+          template: minami
+          front_page: README.md
+      - name: Deploy Docs
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./source/docs
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./docs
