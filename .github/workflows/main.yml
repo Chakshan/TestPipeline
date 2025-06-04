@@ -31,7 +31,7 @@ jobs:
         with:
           source_dir: ./source
           output_dir: ./docs
-          config_file: ./source/config/conf.json
+          # config_file: ./source/config/conf.json
           template: minami
           front_page: README.md
       - name: Deploy Docs
