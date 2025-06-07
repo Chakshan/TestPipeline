@@ -35,7 +35,8 @@ jobs:
           template: minami
           front_page: README.md
       - name: Inspect generated docs
-        run: ls -R ../docs
+        run: ls -R ./docs
+        working-directory: .
       - name: Deploy Docs
         uses: peaceiris/actions-gh-pages@v3
         with:
