@@ -27,7 +27,7 @@ jobs:
       - name: Doc Gen
         uses: andstor/jsdoc-action@v1
         with:
-          source_dir: ./source
+          source_dir: ./source/script
           output_dir: ./docs
           # config_file: ./source/config/conf.json
           template: minami
