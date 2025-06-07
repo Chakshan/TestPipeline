@@ -9,6 +9,15 @@ function add(a, b) {
 }
 
 /**
+ * Jeff
+ * @param {number} jeff
+ * @returns {number} jeff
+ */
+function jeff(jeff) {
+  return jeff;
+}
+
+/**
  * Subtracts two numbers together.
  * @param {number} a - First number
  * @param {number} b - Second number
